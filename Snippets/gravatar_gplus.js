@@ -3,6 +3,14 @@
 
 //  https://www.gravatar.com/avatar/039be6ff7c74d24e071a1f6db49cacb6
 
+
+/*
+
+You can also pass ?d=404 to make Gravatar return a 404 if there is not a profile image associated with the email address. 
+This is helpful in determining whether the user has customized their Gravatar image. – Curtis Gibby Mar 28 at 23:05
+
+*/
+
 //To get Google+ user based on email, use this endpoint:
 
 // http://picasaweb.google.com/data/entry/api/user/virguma@gmail.com?a‌​lt=json
