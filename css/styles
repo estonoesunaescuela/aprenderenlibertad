@@ -1,3 +1,7 @@
-.main-typeface {
+.body {
 	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+	padding-top: 75px;
+}
+
+main {
 }
