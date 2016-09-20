@@ -9,3 +9,7 @@ div.container {
 .box-shadow {
 	box-shadow: 10px 10px 20px grey;
 }
+
+.spacer {
+    margin-top: 40px; /* define margin as you see fit */
+}
