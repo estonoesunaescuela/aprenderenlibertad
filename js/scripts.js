@@ -1,3 +1,5 @@
+//Server python -m SimpleHTTPServer 8000
+
 $(document).ready(readyFunction);
 
 function readyFunction(){
