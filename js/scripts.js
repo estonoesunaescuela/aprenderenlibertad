@@ -34,7 +34,7 @@ function showSignup(){
 }
 
 var handler = StripeCheckout.configure({
-    key: 'pk_live_uWo17rHYl0BXyyKmoMtHM3aS',
+    key: 'pk_test_AfqpiD3DBLtXD8u39JwGErf8', //Test public key
     //***************************************************************IMPORTANT!!!!!!!------CHECK IMAGE STORAGE AND PARAMETERS FOR CHECKOUT**********
     image: 'img/anagrama_peq_color_whitebckgrnd_small.png',
     locale: 'auto',
@@ -64,18 +64,26 @@ var handler = StripeCheckout.configure({
             var now = "El día " + n + " a las " + t;
             beenHacked = resultJson.beenHacked;
             if (beenHacked) {
-                $("#" + window.containerID).find(".divPerkResponse").html("Se ha producido un error en el servidor. Inténtelo más tarde.");
+                $("#payment").html("Se ha producido un error en el servidor. Inténtelo más tarde.");
             } else {
                 var amountR = resultJson.amount / 100;
                 var last4 = resultJson.last4;
                 var eMail = resultJson.eMail;
                 var localizer = resultJson.localizer;
-                $("#" + window.containerID).find(".perkAmountShow").html(amountR);
-                $("#" + window.containerID).find(".perkUlt4Show").html(last4);
-                $("#" + window.containerID).find(".perkEmailShow").html(eMail);
-                $("#" + window.containerID).find(".perkLocalizerShow").html(localizer);
-                $("#" + window.containerID).find(".perkDate").html(now);
+                $("#payment").find("#perkAmountShow").html(amountR);
+                $("#payment").find("#perkUlt4Show").html(last4);
+                $("#payment").find("#perkEmailShow").html(eMail);
+                $("#payment").find("#perkLocalizerShow").html(localizer);
+                $("#payment").find("#perkDate").html(now);
             }
         });
     }
+});
+
+$("#payButton").click(function(e) {
+handler.open({
+            name: '@noesunaescuela',
+            description: "Aprender en libertad",
+            amount: 2500
+        });
 });
