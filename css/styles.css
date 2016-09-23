@@ -13,3 +13,15 @@ div.container {
 .spacer {
     margin-top: 40px; /* define margin as you see fit */
 }
+
+.pointer {
+	cursor:pointer;
+}
+
+.display-block {
+	display: block;
+}
+
+.display-inline-block {
+	display: inline-block;
+}
