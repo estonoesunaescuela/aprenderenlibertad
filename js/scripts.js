@@ -36,17 +36,17 @@ function showSignup(){
 }
 
 var handler = StripeCheckout.configure({
-    key: 'pk_test_AfqpiD3DBLtXD8u39JwGErf8', //Test public key
+    key: 'pk_test_h5MnhNDBNDzMiLfAnasuKtnr', //Test public key
     //***************************************************************IMPORTANT!!!!!!!------CHECK IMAGE STORAGE AND PARAMETERS FOR CHECKOUT**********
     image: 'img/anagrama_peq_color_whitebckgrnd_small.png',
     locale: 'auto',
     currency: "EUR",
-    panelLabel: "Dona €25",
+    panelLabel: "Dona ",
     allowRememberMe: "false",
     token: function(token, args) {
         window.perkTokenBeenCalled = true;
-        var redirectDomain = "https://script.google.com/macros/s/AKfycbywnXbEp_nIPvClMVyEgw_YK_IhHgqnAs9-N-sYVjufx1jPCLw/exec";
-        var Query = "stripeEmail=" + token.email + "&stripeToken=" + token.id + "&amount=" + 2500 + "&itemID=" + "PERK20" + "&beenShared=" + "false" + "&libro=" + "false" + "&curso=" + "false" + "&islive=" + token.livemode;
+        var redirectDomain = "https://script.google.com/macros/s/AKfycbxMXmOodNnajWmNmO6qMYvKyFdGtT5l3EzTOowLElt4Jml2oBLK/exec";
+        var Query = "stripeEmail=" + token.email + "&stripeToken=" + token.id + "&amount=" + 2500 + "&itemID=PERK20" +  "&islive=" + token.livemode;
         var eQuery = window.btoa(unescape(encodeURIComponent(Query)));
         var Query = {
             e: eQuery
