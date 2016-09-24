@@ -101,3 +101,12 @@ handler.open({
         });
 
 });
+
+$("#payButton-issuu").click(function(e) {
+handler.open({
+            name: '@noesunaescuela',
+            description: "Aprender en libertad",
+            amount: 2500
+        });
+
+});
