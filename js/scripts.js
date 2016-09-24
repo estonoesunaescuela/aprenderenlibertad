@@ -19,6 +19,7 @@ function showConditions(){
 	$("#book-page").addClass("hidden");
 	$("#condiciones").removeClass("hidden");
 	$("#privacidad").addClass("hidden");
+	$("#payment").addClass("hidden");
 }
 
 function showPrivacity(){
@@ -26,6 +27,7 @@ function showPrivacity(){
 	$("#book-page").addClass("hidden");
 	$("#condiciones").addClass("hidden");
 	$("#privacidad").removeClass("hidden");
+	$("#payment").addClass("hidden");
 }
 
 function showSignup(){
@@ -33,6 +35,7 @@ function showSignup(){
 	$("#book-page").addClass("hidden");
 	$("#condiciones").addClass("hidden");
 	$("#signup-form").removeClass("hidden");
+	$("#payment").addClass("hidden");
 }
 
 var handler = StripeCheckout.configure({
@@ -42,7 +45,7 @@ var handler = StripeCheckout.configure({
     locale: 'auto',
     currency: "EUR",
     panelLabel: "Dona ",
-    allowRememberMe: "false",
+    allowRememberMe: false,
     token: function(token, args) {
         window.perkTokenBeenCalled = true;
         var redirectDomain = "https://script.google.com/macros/s/AKfycbxMXmOodNnajWmNmO6qMYvKyFdGtT5l3EzTOowLElt4Jml2oBLK/exec";
@@ -59,6 +62,12 @@ var handler = StripeCheckout.configure({
             dataType: 'jsonp',
             data: Query
         });
+        $("#main-page").addClass("hidden");
+		$("#book-page").addClass("hidden");
+		$("#condiciones").addClass("hidden");
+		$("#privacidad").addClass("hidden");
+		$("#payment").removeClass("hidden");
+
         request.done(function(resultJson) {
             var date = new Date();
             var n = date.toLocaleDateString();
@@ -77,6 +86,8 @@ var handler = StripeCheckout.configure({
                 $("#payment").find("#perkEmailShow").html(eMail);
                 $("#payment").find("#perkLocalizerShow").html(localizer);
                 $("#payment").find("#perkDate").html(now);
+                $("#spiner").addClass("hidden");
+                $("#transaction-summary").removeClass("hidden");
             }
         });
     }
@@ -88,4 +99,5 @@ handler.open({
             description: "Aprender en libertad",
             amount: 2500
         });
+
 });
