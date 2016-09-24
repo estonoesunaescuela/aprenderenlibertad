@@ -258,13 +258,39 @@
                 <div id="return-home" class="text-center"><a href="/">>>VOLVER<<</a></div>
             </div>
         </div>
-    </div>
+    
     <div class="hidden" id="payment">
-        <div id="perkAmountShow"></div>
-        <div id="perkUlt4Show"></div>
-        <div id="perkEmailShow"></div>
-        <div id="perkLocalizerShow"></div>
-        <div id="perkDate"></div>
+    <div id = "spiner">
+        <div class = "row">
+            <div class = "col-lg-6 col-lg-offset-3 text-center">
+                <h4>Estamos procesando tu solicitud, espera unos segundos...</h4>
+            </div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+        </div>
+        <div class = "row">
+            <div class = "col-lg-6 col-lg-offset-3 text-center">
+                <img class = "display-inline-block" src="img/ajax-loader.gif">
+            </div>
+        </div>
+    </div>
+        <div class = "text-center hidden" id = "transaction-summary">
+        <h4>
+            ¡Enhorabuena! Acabamos de procesar con éxito tu aportación. En breve recibirás un email con los datos.
+        </h4>
+        <div class="spacer"></div>
+            <div><span>Fecha de la transacción: </span><strong><span id="perkDate"></span></strong></div>
+            <div><span>Cantidad aportada: </span><strong><span>€</span><span id="perkAmountShow"></span></strong></div>
+            <div><span>Tarjeta de crédito: XXXX XXXX XXXX </span><strong><span id="perkUlt4Show"></span></strong></div>
+            <div><span>Dirección de email (comprueba que esté bien): </span><strong><span id="perkEmailShow"></span></strong></div>
+            <div><span>Código de referencia (apúntalo para cualquier comunicación): </span><strong><span id="perkLocalizerShow"></span></strong></div>
+            <div class="spacer"></div>
+            <div class="row">
+                <div id="return-home" class="text-center"><a href="/">>>VOLVER<<</a></div>
+            </div>
+        </div>
+        <div class="spacer"></div>
+    </div>
     </div>
     <footer>
         <div class="spacer"></div>
