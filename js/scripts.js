@@ -39,8 +39,7 @@ function showSignup(){
 }
 
 var handler = StripeCheckout.configure({
-    key: 'pk_test_h5MnhNDBNDzMiLfAnasuKtnr', //Test public key
-    //***************************************************************IMPORTANT!!!!!!!------CHECK IMAGE STORAGE AND PARAMETERS FOR CHECKOUT**********
+    key: 'pk_live_qMJmUX5HwXK5zwW0Cn4w3bU4', 
     image: 'img/anagrama_peq_color_whitebckgrnd_small.png',
     locale: 'auto',
     currency: "EUR",
