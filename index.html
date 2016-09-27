@@ -1,271 +1,357 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="Aprender en libertad" content="Cómo recuperar nuestro instinto de juego para transformar la educación">
     <meta name="author" content="">
-
     <title>Aprender en libertad</title>
-
+    <link rel="icon" href="img/favicon.png">
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-
-    <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-
     <!-- Theme CSS -->
-    <link href="css/creative.min.css" rel="stylesheet">
-
+    <link href="css/styles.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 
 <body id="page-top">
-
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#about">Sobre el libro</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1 id="homeHeading">Aprender en libertad</h1>
-                <hr>
-                <p>Más información en breve. Puedes obtener el libro siguiendo el siguiente enlace</p>
-                <a href="http://www.estonoesunaescuela.org/colabora" class="btn btn-primary btn-xl page-scroll">Consigue el libro</a>
-            </div>
-        </div>
-    </header>
-
-    <!--<section class="bg-primary" id="about">
+    <!-- Google Tag Manager -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-PGWRCM" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script>
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PGWRCM');
+    </script>
+    <!-- End Google Tag Manager -->
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">We've got what you need!</h2>
-                    <hr class="light">
-                    <p class="text-faded">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
-                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a>
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">
+                    <img alt="Brand" src="img/logo_web1x-2.png">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row row-eq-height" id="main-page">
+            <div class="col-lg-5">
+                <img class="img-responsive box-shadow pointer" src="img/portada.png" id="book-image" data-toggle="tooltip" title="Lee las primeras páginas">
+                <div class="spacer"></div>
+                <h4 class="display-3 small text-center">Tapa blanda | 320 Páginas | Aportación €25 | ISBN: 9788494554810</h4>
+                <div class="spacer"></div>
+                <div class="row">
+                    <button type="button" class="col-lg-5 col-lg-offset-1 col-md-5 col-sm-5 col-xs-10 col-xs-offset-1 btn btn-default"><a href="mailto:info@estonoesunaescuela.org?subject=Valoración de Aprender en libertad&body=Déjanos tu opinión sobre el libro y la publicaremos en la web. ¡Gracias!">Deja tu opinión</a></button>
+                    <button type="button" class="col-lg-5 col-md-5 col-sm-5 col-sm-pull-1 col-xs-10 col-xs-offset-1 btn btn-info" id="signup-button">Suscríbete a las novedades</button>
+                </div>
+            </div>
+            <div class="col-lg-5 col-lg-offset-2">
+                <div>
+                    <div>
+                        <h1 class="text-center text-uppercase">Aprender en libertad</h1>
+                    </div>
+                    <div class="spacer"></div>
+                    <div>
+                        <p class="text-justify lead">El testimonio honesto de un padre, a la vez que un <strong>análisis lúcido de nuestro sistema educativo desde una perspectiva histórica, antropológica y científica.</strong> Un libro necesario para enfrentarnos a interrogantes que no podemos seguir eludiendo si queremos construir, entre todos, una educación más humana y auténtica.
+                            <p>
+                    </div>
+                    <div class="spacer"></div>
+                    <div>
+                        <p class="text-justify lead">Consíguelo ahora y te convertirás en cofinanciador en la producción del documental <a href = "http://www.estonoesunaescuela.org/colabora" target="_blank">“Corriendo por las olas”</a> y, además del libro, obtendrás:</p>
+                    </div>
+                    <div>
+                        <ul class="lead">
+                            <li>Reconocimiento web</li>
+                            <li>Créditos del documental</li>
+                            <li>Archivo con las transcripciones de todas las entrevistas</li>
+                            <li>Acceso exclusivo al corte inicial del documental cuando esté listo</li>
+                        </ul>
+                    </div>
+                    <div class="spacer"></div>
+                    <div>
+                        <button type="button" class="btn btn-lg btn-danger btn-block" id="payButton">CONSÍGUELO APORTANDO €25*</button>
+                    </div>
+                    <div class="spacer"></div>
+                    <div>
+                        <p class="text-center">*Sólo se realizan envíos a España. Costes incluidos en la aportación.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>-->
-
-    <!--<section id="services">
-        <div class="container">
+        <div class="hidden" id="book-page">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">At Your Service</h2>
-                    <hr class="primary">
+                    <iframe width="650" height="492" src="https://e.issuu.com/embed.html#5353932/39031850" frameborder="0" allowfullscreen align="middle"></iframe>
                 </div>
             </div>
-        </div>
-        <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
-                        <h3>Sturdy Templates</h3>
-                        <p class="text-muted">Our templates are updated regularly so they don't break.</p>
-                    </div>
+                <div class="spacer"></div>
+                <div id="return-home" class="text-center"><a href="/">>>VOLVER<<</a></div>
+                <div class="spacer"></div>
+                <div class="col-md-4 col-md-offset-4">
+                    <button type="button" class="btn btn-lg btn-danger btn-block" id = "payButton-issuu">CONSÍGUELO APORTANDO €25*</button>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
-                        <h3>Ready to Ship</h3>
-                        <p class="text-muted">You can use this theme as is, or you can make changes!</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
-                        <h3>Up to Date</h3>
-                        <p class="text-muted">We update dependencies to keep things fresh.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
-                        <h3>Made with Love</h3>
-                        <p class="text-muted">You have to make your websites with love these days!</p>
-                    </div>
-                </div>
+                <div class="spacer"></div>
             </div>
         </div>
-    </section>-->
 
-    <!--<section class="no-padding" id="portfolio">
-        <div class="container-fluid">
-            <div class="row no-gutter popup-gallery">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/2.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/3.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/4.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/4.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/5.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/5.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/6.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/6.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>-->
-
-    <!--<aside class="bg-dark">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>Free Download at Start Bootstrap!</h2>
-                <a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-xl sr-button">Download Now!</a>
-            </div>
-        </div>
-    </aside>-->
-
-    <section id="contact">
-        <div class="container">
+        <div class="hidden" id="condiciones">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Escríbenos</h2>
-                    <hr class="primary">
-                    <p>Mándanos un email</p>
-                </div>
-                <!--<div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x sr-contact"></i>
-                    <p>123-456-6789</p>
-                </div>-->
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p><a href="mailto:info@estonoesunaescuela.org">info@estonoesunaescuela.org</a></p>
+<div>
+<p>¡Bienvenido/a a la web de Aprender en libertad!</p>
+
+<p>La web www.aprenderenlibertad.es forma parte del proyecto de <a href = "http://www.estonoesunaescuela.org" target="_blank">"Esto no es una escuela"</a>, su entidad titular, una asociación sin ánimo de lucro que está inscrita en el Registro Nacional de Asociaciones: Grupo: 1º, Sección: 1ª, Número Nacional: 605899 con número de identificación fiscal G76647502. Nuestra dirección postal es el Apdo. de Correos 10293, Santa Cruz de Tenerife, 38080, y dirección de correo electrónico  <a href = "mailto:info@estonoesunaescuela.org">info@estonoesunaescuela.org</a>.</p>
+
+<p>Nos esforzamos por producir y mantener disponibles en Internet contenidos educativos e informativos relacionados con una educación activa y no directiva, sin costo, y con duración indefinida. Además ofrecemos materiales divulgativos y publicaciones de calidad relacionados con la temática de la web.</p>
+
+<p>Esta página explica nuestras Condiciones de Uso. Cuando entras en la web www.aprenderenlibertad.es estás aceptando todas las normas que se especifican aquí. Algunas normas se deben explicar en lenguaje jurídico, pero hemos hecho todo lo posible para ofrecerte información clara y sencilla.</p>
+
+<ol>
+<li><h5>OBJETO</h5>
+
+<p>Esto no es una escuela te ofrece principalmente un servicio gratuito donde podrás acceder a información sobre alternativas educativas y pedagógicas. En concreto, la web de aprenderenlibertad.es ofrece inicialmente la posibilidad de contribuir en la campaña de financiación colectiva del documental <a href = "http://www.estonoesunaescuela.org/colabora" target = "_blank">"Corriendo por las olas"</a>y obtener como obsequio el libro del mismo título, "Aprender en libertad", de Peter Gray. Los contenidos de esta web se irán incrementando, con el objeto de facilitar recursos, información y un espacio de encuentro de personas que compartan una visión similar sobre aprendizaje autodirigido.</p>
+</li>
+
+<li><h5>CONDICIONES</h5>
+
+<p>Esto no es una escuela podrá modificar en cualquier momento las condiciones aquí determinadas, que se darán a conocer mediante su publicación. La vigencia de estas condiciones irá en función de su exposición y estarán vigentes hasta que sean modificadas por otras debidamente publicadas.</p>
+
+</li>
+
+<li><h5>ACCESO</h5>
+
+<p>El acceso a esta página web tiene carácter libre y gratuito.</p>
+
+<p>Cuando sea necesario que te registres o aportes datos personales para poder acceder a alguno de los servicios, en la recogida y el tratamiento de los datos personales será de aplicación lo dispuesto en la Política de Privacidad recogida en la web.</p>
+
+<p>Esto no es una escuela se reserva el derecho de efectuar, en cualquier momento y sin necesidad de previo aviso, modificaciones y actualizaciones de la información contenida en la web, de la configuración y presentación de ésta, así como de eliminar información contenida en ésta, o suspender temporalmente la accesibilidad.</p>
+
+<p>Esto no es una escuela trabaja para asegurar que los contenidos y funcionamiento de su web sean de la mejor calidad posible. A pesar de ello, no podemos garantizar la inexistencia de interrupciones o errores en el acceso a la web o a su contenido, ni nos haremos responsable de posibles problemas técnicos o errores que se produzcan durante la conexión a Internet. La asociación tampoco garantiza la ausencia de virus ni de otros elementos lesivos que puedan producir alteraciones en su sistema informático (hardware y software) o en los documentos electrónicos, aplicaciones y ficheros almacenados en éste, por lo que se excluye cualquier responsabilidad por daños y perjuicios que puedan producirse en el sistema informático.</p>
+
+</li>
+
+<li><h5>PROPIEDAD INTELECTUAL E INDUSTRIAL</h5>
+
+<p>Salvo que se indique lo contrario, el contenido, así como la información objeto de propiedad intelectual cuya titularidad corresponda a Esto no es una escuela, se ofrece bajo licencia Creative Commoms BY, SA, NC 4.0, lo que significa que podrá reproducirse, comunicarse públicamente, transformarse o extraerse libremente de forma no exclusiva, de manera total o parcial, por cualquier persona, en cualquier formato, sin ninguna restricción temporal ni territorial y, para cualquier uso legítimo posterior, bajo las siguientes condiciones:</p>
+
+<ol>
+     <li>deberá indicarse siempre la autoría y enlazar al contenido original, así como indicar si se hubieran realizado alteraciones del original;</li>
+
+     <li>deberá compartirse igual, en cumplimiento con los términos de la licencia.</li>
+
+<li>No autorizamos la reproducción de ninguno de nuestros contenidos con fines comerciales.</li>
+
+</ol>
+<p>Esto no es una escuela no será responsable de cualquier perjuicio que pudiera derivarse de la utilización de los contenidos, servicios e información incluida en este sitio web, o de la infracción por parte de los usuarios y usuarias de cualquier disposición legal vigente.</p>
+
+<p>Esto no es una escuela ha procurado en todo momento obtener el consentimiento informado de quienes aparecen en todas las imágenes de su titularidad. No obstante, si consideras que en dichas imágenes se ha vulnerado tu derecho a la intimidad, o el de un menor a tu cargo, te agradeceremos que te pongas en contacto con nosotros en la dirección de correo electrónico info@estonoesunaescuela.org para subsanarlo inmediatamente.</p>
+
+</li>
+
+<li><h5>COOKIES, NAVEGADORES Y ENLACES</h5>
+
+<p>Esto no es una escuela te informa de que la web utiliza “cookies", es decir, ficheros de información alojados en tu propio terminal y que sirven para facilitar la navegación por el portal. En ningún caso las cookies recogerán ni realizarán ningún tipo de tratamiento de datos de carácter personal. De todas formas, tienes la posibilidad de configurar el navegador de tal modo que impida la instalación de estos archivos.</p>
+
+<p>Esta página web, como la mayor parte de las webs modernas, hace un amplio uso de JavaScript. Normalmente los navegadores permiten desactivar JavaScript por motivos de seguridad, aunque es necesario advertir que, de hacerlo, se limitaría sustancialmente la experiencia de usuario y la funcionalidad de la web. También es posible que navegadores que no estén actualizados a su última versión no presenten la información adecuadamente, por lo que se recomienda su actualización.</p>
+
+<p>Nos hemos esforzado por hacer compatible nuestra web con todo tipo de dispositivos, pero si experimentas algún problema y deseas ayudarnos a mejorar puedes escribirnos a admin@estonoesunaescuela.org.</p>
+
+<p>Esto no es una escuela no asume ninguna responsabilidad sobre los enlaces externos que, en su caso, pudieran incluirse en el portal, ya que no tiene ningún tipo de control sobre los mismos, por lo que accedes bajo tu exclusiva responsabilidad al contenido, y en las condiciones de uso que rijan en los mismos.</p>
+
+</li>
+
+<li><h5>POLITICA DE PRIVACIDAD</h5>
+
+<p>Esto no es una escuela protege los datos personales según lo establecido en la Ley Orgánica de Protección de Datos y el Reglamento de Medidas de Seguridad. La información sobre la protección de datos personales la encontrarás recogida en nuestra Política de Privacidad.</p>
+
+</li>
+
+<li><h5>DURACIÓN Y TERMINACIÓN</h5>
+
+<p>La web tiene, en principio, una duración indefinida. Esto no es una escuela, no obstante, está autorizada para dar por terminada o suspender la web en cualquier momento. Cuando ello sea razonablemente posible, Esto no es una escuela advertirá previamente la terminación o suspensión a los usuarios.</p>
+
+</li>
+
+<li><h5>LEGISLACIÓN APLICABLE Y JURISDICCIÓN</h5>
+
+<p>La relación entre Esto no es una escuela y el usuario se regirá por la normativa española vigente y cualquier controversia se someterá a los Juzgados y tribunales de la ciudad de Santa Cruz de Tenerife.</p>
+
+</li>
+<ol>
+</div>            </div>
+            <div class="spacer"></div>
+            <div id="return-home" class="text-center"><a href="/">>>VOLVER<<</a></div>
+        </div>
+        <div class="hidden" id="privacidad">
+            <div class="row">
+<div>
+<p>En cumplimiento de la Ley Orgánica 15/1999, de 13 de diciembre, de Protección de Datos de Carácter Personal, te informamos que los datos personales que nos suministres a través de la web <a href="http://www.aprenderenlibertad.es" target = "_blank"> www.aprenderenlibertad.es </a>pasarán a formar parte de un fichero titularidad de la asociación <a href = "http://www.estonoesunaescuela.org" target="_blank">Esto no es una escuela</a>, a fin de que podamos ponernos en contacto contigo para informarte sobre las transacciones que realices a través de la web y para poder ofrecerte las novedades, avances y actividades que se vayan produciendo en relación con este proyecto.</p>
+
+<p>Asimismo te informamos que puedes ejercitar tus derechos de acceso, rectificación, cancelación y oposición escribiéndonos a la dirección <a href="mailto:info@estonoesunaescuela.org">info@estonoesunaescuela.org</a>.</p>
+
+<p>En ningún caso los responsables de <strong>Esto no es una escuela</strong> vendemos, alquilamos ni ponemos a disposición de terceras personas los datos personales proporcionados por ti.</p>
+
+<p>Al incorporar tus datos a los formularios de esta web debes asegurarte de que los datos personales facilitados son veraces y te haces responsable de informar sobre cualquier modificación en los mismos.</p>
+
+
+<p>En el caso de que deban incluirse datos de carácter personal referentes a personas físicas distintas de la que cumplimenta el formulario web deberás, con carácter previo a su inclusión, informarles de los extremos contenidos en los párrafos anteriores.</p>
+
+<p><strong>Esto no es una escuela</strong> ha adoptado las medidas necesarias para evitar la alteración, pérdida, tratamiento o acceso no autorizado de los datos personales. Habida cuenta en todo momento del estado de la tecnología, no obstante, debes ser consciente de que las medidas de seguridad en Internet no son inexpugnables.</p>
+
+<p>Esta página web utiliza Google Analytics, un servicio analítico de web prestado por Google, Inc., una compañía de Delaware cuya oficina principal está en 1600 Amphitheatre Parkway, Mountain View (California), CA 94043, Estados Unidos ("Google"). Google Analytics utiliza “cookies" para ayudar a la web a analizar el uso que hacen los usuarios/as del sitio web. La información que genera la cookie acerca de tu uso de la web (incluyendo tu dirección IP) será directamente transmitida y archivada por Google en los servidores de Estados Unidos. Google usará esta información por cuenta nuestra con el propósito de seguir la pista de tu uso de la web, recopilando informes de la actividad de la web y prestando otros servicios relacionados con la actividad de la web y el uso de Internet. Google podrá transmitir dicha información a terceros cuando así se lo requiera la legislación, o cuando dichos terceros procesen la información por cuenta de Google. Google no asociará tu dirección IP con ningún otro dato del que disponga Google. Puedes evitar el tratamiento de los datos o la información rechazando el uso de cookies mediante la selección de la configuración apropiada de tu navegador. Sin embargo,  si lo haces es posible que no puedas usar la plena funcionabilidad de esta web.</p>
+
+</div>            </div>
+            <div class="spacer"></div>
+            <div id="return-home" class="text-center"><a href="/">>>VOLVER<<</a></div>
+        </div>
+        <div class="hidden" id="signup-form">
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-3">
+                    <!-- Begin MailChimp Signup Form -->
+                    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+                    <style type="text/css">
+                    #mc_embed_signup {
+                        background: #fff;
+                        clear: left;
+                        font: 14px "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+                    }
+                    /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                    </style>
+                    <div id="mc_embed_signup">
+                        <form action="//estonoesunaescuela.us3.list-manage.com/subscribe/post?u=ee409b5524868287e585b5636&amp;id=8154c9edeb&SIGNUP=AEL" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                            <div id="mc_embed_signup_scroll">
+                                <h2>Suscríbete a la lista de correo</h2>
+                                <div class="mc-field-group">
+                                    <label for="mce-EMAIL">Email</label>
+                                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                                </div>
+                                <div id="mce-responses" class="clear">
+                                    <div class="response" id="mce-error-response" style="display:none"></div>
+                                    <div class="response" id="mce-success-response" style="display:none"></div>
+                                </div>
+                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                    <input type="text" name="b_ee409b5524868287e585b5636_8154c9edeb" tabindex="-1" value="">
+                                </div>
+                                <div class="clear">
+                                    <input type="submit" value="Suscribir" name="subscribe" id="mc-embedded-subscribe" class="button">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+                    <script type='text/javascript'>
+                    (function($) {
+                        window.fnames = new Array();
+                        window.ftypes = new Array();
+                        fnames[0] = 'EMAIL';
+                        ftypes[0] = 'email';
+                        fnames[26] = 'SIGNUP';
+                        ftypes[26] = 'text';
+                        /*
+                         * Translated default messages for the $ validation plugin.
+                         * Locale: ES
+                         */
+                        $.extend($.validator.messages, {
+                            required: "Este campo es obligatorio.",
+                            remote: "Por favor, rellena este campo.",
+                            email: "Por favor, escribe una dirección de correo válida",
+                            url: "Por favor, escribe una URL válida.",
+                            date: "Por favor, escribe una fecha válida.",
+                            dateISO: "Por favor, escribe una fecha (ISO) válida.",
+                            number: "Por favor, escribe un número entero válido.",
+                            digits: "Por favor, escribe sólo dígitos.",
+                            creditcard: "Por favor, escribe un número de tarjeta válido.",
+                            equalTo: "Por favor, escribe el mismo valor de nuevo.",
+                            accept: "Por favor, escribe un valor con una extensión aceptada.",
+                            maxlength: $.validator.format("Por favor, no escribas más de {0} caracteres."),
+                            minlength: $.validator.format("Por favor, no escribas menos de {0} caracteres."),
+                            rangelength: $.validator.format("Por favor, escribe un valor entre {0} y {1} caracteres."),
+                            range: $.validator.format("Por favor, escribe un valor entre {0} y {1}."),
+                            max: $.validator.format("Por favor, escribe un valor menor o igual a {0}."),
+                            min: $.validator.format("Por favor, escribe un valor mayor o igual a {0}.")
+                        });
+                    }(jQuery));
+                    var $mcj = jQuery.noConflict(true);
+                    </script>
+                    <!--End mc_embed_signup-->
                 </div>
             </div>
+            <div class="spacer"></div>
+            <div class="row">
+                <div id="return-home" class="text-center"><a href="/">>>VOLVER<<</a></div>
+            </div>
         </div>
-    </section>
 
+    <div class="hidden" id="payment">
+    <div id = "spiner">
+        <div class = "row">
+            <div class = "col-lg-6 col-lg-offset-3 text-center">
+                <h4>Estamos procesando tu solicitud, espera unos segundos...</h4>
+            </div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+        </div>
+
+        <div class = "row">
+            <div class = "col-lg-6 col-lg-offset-3 text-center">
+                <img class = "display-inline-block" src="img/ajax-loader.gif">
+            </div>
+        </div>
+    </div>
+        <div class = "text-center hidden" id = "transaction-summary">
+        <h4>
+            ¡Enhorabuena! Acabamos de procesar con éxito tu aportación. <br> En breve recibirás un email con tu justificante y un enlace para que nos facilites los datos de envío. <br> ¡Muchas gracias!
+        </h4>
+        <div class="spacer"></div>
+            <div><span>Fecha de la transacción: </span><strong><span id="perkDate"></span></strong></div>
+            <div><span>Cantidad aportada: </span><strong><span>€</span><span id="perkAmountShow"></span></strong></div>
+            <div><span>Tarjeta de crédito: XXXX XXXX XXXX </span><strong><span id="perkUlt4Show"></span></strong></div>
+            <div><span>Dirección de email (comprueba que esté bien): </span><strong><span id="perkEmailShow"></span></strong></div>
+            <div><span>Código de referencia (apúntalo para cualquier comunicación): </span><strong><span id="perkLocalizerShow"></span></strong></div>
+            <div class="spacer"></div>
+            <div class="row">
+                <div id="return-home" class="text-center"><a href="/">>>VOLVER<<</a></div>
+            </div>
+        </div>
+        <div class="spacer"></div>
+    </div>
+    </div>
+    <footer>
+        <div class="spacer"></div>
+        <div class="text-center">
+            <span id="condiciones-link" class="pointer display-inline-block">Condiciones</span> | <span id="privacidad-link" class="pointer display-inline-block">Política de privacidad</span>
+        </div>
+    </footer>
+    </div>
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/creative.min.js"></script>
-
+    <script src="https://checkout.stripe.com/checkout.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 
 </html>

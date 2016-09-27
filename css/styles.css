@@ -1,0 +1,27 @@
+body {
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    padding-top: 150px;
+}
+
+div.container {
+    min-height: 75px;
+}
+.box-shadow {
+	box-shadow: 10px 10px 20px grey;
+}
+
+.spacer {
+    margin-top: 40px; /* define margin as you see fit */
+}
+
+.pointer {
+	cursor:pointer;
+}
+
+.display-block {
+	display: block;
+}
+
+.display-inline-block {
+	display: inline-block;
+}
