@@ -39,7 +39,7 @@ function showSignup(){
 }
 
 var handler = StripeCheckout.configure({
-    key: 'pk_live_qMJmUX5HwXK5zwW0Cn4w3bU4', 
+    key: 'pk_test_h5MnhNDBNDzMiLfAnasuKtnr', 
     image: 'img/anagrama_peq_color_whitebckgrnd_small.png',
     locale: 'auto',
     currency: "EUR",
